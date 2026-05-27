@@ -1,14 +1,9 @@
-const finalhandler = require('finalhandler');
-const http = require('http');
-const serveStatic = require('serve-static');
+const express = require('express');
+const app = express();
 
-// Serve up public/ftp folder
-const serve = serveStatic('public/ftp', { index: ['index.html', 'index.htm'] });
-
-// Create server
-const server = http.createServer((req, res) => {
-  serve(req, res, finalhandler(req, res));
-});
+// Udostępnianie folderu "public" jako statycznego
 app.use(express.static('public'));
-// Listen
-server.listen(3000);
+
+app.listen(3000, () => {
+  console.log('Server działa na http://localhost:3000');
+});
