@@ -1,0 +1,23 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "PakietProbny",
+  "keywords": [
+    "null"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "license": "ISC",
+  "author": "me",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "serve-static": "^2.2.1"
+  }
+}
